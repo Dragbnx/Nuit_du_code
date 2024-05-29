@@ -129,7 +129,7 @@ class Salle:
     def update(self):
         for monstre in self.monstre:
             monstre.choix()
-            if monstre.peut_deplace == 2:
+            if monstre.peut_deplace == 8:
                 self.mvt(monstre, monstre.direction)
                 monstre.peut_deplace = 0
             else:
@@ -161,7 +161,7 @@ class Monstre:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.peut_deplace = 2
+        self.peut_deplace = 4
         self.direction = ''
         self.cycle = 0
 

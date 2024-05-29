@@ -161,7 +161,7 @@ class Monstre:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.peut_deplace = 4
+        self.peut_deplace = 8
         self.direction = ''
         self.cycle = 0
 

@@ -95,7 +95,7 @@ class App:
     def update(self):
         self.deplacement()
         self.salle[self.actu].update()
-        self.mort()
+        #self.mort()
         if self.actu > 10:
             self.win = True
 
@@ -104,8 +104,7 @@ class App:
         self.salle[self.actu].affiche()
         self.perso.affiche()
         if self.win:
-            pyxel.cls(0)
-            pyxel.text(64, 64, "YOU'VE GOT THE COOKIE ! :D", 0)
+            pyxel.text(10, 64, "YOU'VE GOT THE COOKIE ! :D", 0)
 
 
 
